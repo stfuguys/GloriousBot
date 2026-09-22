@@ -60,7 +60,7 @@ const dbcreate = () => {
   antiban INTEGER DEFAULT 0,
   antiupdate INTEGER DEFAULT 0
 )`
-		];
+				`CREATE TABLE IF NOT EXISTS maitres (id TEXT PRIMARY KEY)`,];
 
 		dbcreate.forEach(query => {
 			db.run(query);
